@@ -15,8 +15,22 @@ Notes on sed utility and scripting
 
 # sed Syntax
 
+## Using Command Line Instructions
+
 ```bash
 sed \[-e\] 'instruction' file
+```
+
+The **-e** is not needed for a single instruction command, but if multiple instructions are involved you can designate them with **-d**:
+
+```bash
+sed -e 'instruction1' -e 'instruction2' file
+```
+
+## Using a Script file
+
+```bash
+sed -f  scriptname file
 ```
 
 # Simple Examples
@@ -49,3 +63,11 @@ s/this/that/
 s/here/there/' test.txt
 ```
 As long as the closing single quote was provided, the command will execute after pressing enter at the end of 'test.txt' (even though the terminiting quote is just before it, but because it is on the same line.
+
+# Remove all text before and including a word
+
+Remove the word 'setf' and all text preceeding it on the same line.  In addition sort the output and remove duplicates
+
+```bash
+sed 's/^.*setf //' filetypes.txt | sort -u > out.txt
+```
