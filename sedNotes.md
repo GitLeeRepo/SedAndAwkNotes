@@ -45,8 +45,7 @@ sed 's/this/that/'; -e 's/here/there/'; test.txt
 For this enter **sed '** (with a single quote) to begin entering multiple lines in the shell
 ```bash
 sed '
-s/this/that/'
-s/here/there/'
-sed 's/this/that/' test.txt
+s/this/that/
+s/here/there/' test.txt
 ```
 As long as the closing single quote was provided, the command will execute after pressing enter at the end of 'test.txt' (even though the terminiting quote is just before it, but because it is on the same line.
