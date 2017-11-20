@@ -15,7 +15,7 @@ Notes on sed utility and scripting
 
 # Simple Examples
 
-**To Replace every occurance of 'this' with 'that' in test.txt
+**To Replace every occurance of 'this' with 'that' in test.txt**
 ```bash
 sed 's/this/that/' test.txt
 ```
