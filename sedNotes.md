@@ -35,8 +35,18 @@ sed 's/this/that/' test.txt
 sed -e 's/this/that/' -e 's/here/there/' test.txt
 ```
 
-**Alternative 1, using semi-colons after each instruction
+**Alternative 2, using semi-colons after each instruction
 ```bash
 sed 's/this/that/'; -e 's/here/there/'; test.txt
 ```
 
+**Alternative 3, multi-line input
+
+For this enter **sed '** (with a single quote) to begin entering multiple lines in the shell
+```bash
+sed '
+s/this/that/'
+s/here/there/'
+sed 's/this/that/' test.txt
+```
+As long as the closing single quote was provided, the command will execute after pressing enter at the end of 'test.txt' (even though the terminiting quote is just before it, but because it is on the same line.
