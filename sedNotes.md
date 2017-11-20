@@ -27,6 +27,17 @@ The **-e** is not needed for a single instruction command, but if multiple instr
 sed -e 'instruction1' -e 'instruction2' file
 ```
 
+By default the output is sent to standard out, and the original file is not changed.  To output to another file, simply:
+
+```bash
+sed 'instruction' inFile > outFile
+```
+
+To update the original file in place:
+
+```bash
+sed -i 'instruction' fileToUpdate
+
 ## Using a Script file
 
 ```bash
