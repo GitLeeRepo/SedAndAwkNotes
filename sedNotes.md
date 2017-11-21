@@ -79,11 +79,10 @@ As long as the closing single quote was provided, the command will execute after
 
 ## Remove all text before and including a word
 
-Remove the word 'setf' and all text preceeding it on the same line.  In addition sort the output and remove duplicates
+This example takes the filetypes.raw text file wich has the filetype definitions recognized by vi, removing all extraneous data before and after the filetype name.  The file type name is identified as the word that immediately follows the word 'setf'.  The text following the file text name is removed in the first substitute, with the second substitute removing the text in front of the filetype name, including the word 'setf' that was used to identify its location.  In addition sit uses sort to ort the output and remove duplicates, and then finally stores it in the filetypes.txt file.
 
 ```bash
 sed -E -e 's/setf.([a-z]\w+).*/setf \1/' -e 's/^.*setf//' filetypes.raw | sort -u > filetypes.txt
-
 ```
 Note that the order of the substitutes matter in this example
 
