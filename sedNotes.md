@@ -75,10 +75,15 @@ s/here/there/' test.txt
 ```
 As long as the closing single quote was provided, the command will execute after pressing enter at the end of 'test.txt' (even though the terminiting quote is just before it, but because it is on the same line.
 
-# Remove all text before and including a word
+# Examples
+
+## Remove all text before and including a word
 
 Remove the word 'setf' and all text preceeding it on the same line.  In addition sort the output and remove duplicates
 
 ```bash
-sed 's/^.*setf //' filetypes.txt | sort -u > out.txt
+sed -E -e 's/setf.([a-z]\w+).*/setf \1/' -e 's/^.*setf//' filetypes.raw | sort -u > filetypes.txt
+
 ```
+Note that the order of the substitutes matter in this example
+
