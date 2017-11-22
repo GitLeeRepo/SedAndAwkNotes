@@ -10,7 +10,7 @@ Notes on sed utility and scripting
 
 ## My Other Notes
 
-* [awkNotes](https://github.com/GitLeeRepo/SedAndAwkNotes/blob/master/awkNotes.md#overview)
+* [awkNotes](https://github.com/GitLeeRepo/SedAwkAndNotes/blob/master/awkNotes.md#overview)
 * [RegExNotes](https://github.com/GitLeeRepo/RegExNotes/blob/master/RegExNotes.md#overview)
 
 # sed Syntax
