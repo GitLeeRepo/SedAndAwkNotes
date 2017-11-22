@@ -26,16 +26,34 @@ Notes on the grep utility
 
 # Examples
 
-# Basic
+## Basic
+
+List the lines that match the search in the current directory
+
+```bash
+grep "regex"
+```
 
 ## Matching Filenames with Directory Recursion
 
+Don't display the matched text, but just display the filename, also search all subdirectories of the path/current directory
 ```bash
 grep -rl "regex" \</path\>
 ```
 
 ## List Text Found, Including the Line Number, with Directory Recursion
 
+Display the matching text, include the line number where the match was found
+
 ```bash
 grep -rn "regex" \</path\>
 ```
+
+## Match the Text and Pipe to Filter for Specific Filename Pattern
+
+Search for header files containing 'boot_params' in the current directory and all subdirectories, displaying the file names only, and not the matched text.
+
+```bash
+grep -rl 'boot_params' | grep '.h$'
+```
+
