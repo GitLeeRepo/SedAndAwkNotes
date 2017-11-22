@@ -46,4 +46,4 @@ ls -l  | awk '/^[^d]/ { print $9 $10 " " $5 }'
 -rw-r--r-- 1 root root 1747 Jul  4  2016 avahi-daemon.conf
 -rw-r--r-- 1 root root 1121 Jul  4  2016 hosts
 ```
-In this case the directory enty (idenified by a 'd' in the first position is filtered out.  The **/^\[^d\]/** regular expression says don't match the 'd' (the **\[^d\]** part) that is at the beginning of the line (the first **^ caret**).  The **^ caret** symbol has two meanings when used here.  By itself it mean start of string/line, but when in the character selectors (the square brackets) it means "**not**", as in **not d** here.
+In this case the directory entry (idenified by a 'd' in the first position is filtered out.  The **/^\[^d\]/** regular expression says don't match the 'd' (the **\[^d\]** part) that is at the beginning of the line (the first **^ caret**).  The **^ caret** symbol has two meanings when used here.  By itself it mean start of string/line, but when in the character selectors (the square brackets) it means "**not**", as in **not d** here.
