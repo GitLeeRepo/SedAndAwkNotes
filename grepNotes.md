@@ -57,3 +57,32 @@ Search for header files containing 'boot_params' in the current directory and al
 grep -rl 'boot_params' | grep '.h$'
 ```
 
+# Lookaround
+
+A lookaround makes an assertion (that which is in the parenthesis), if that assertion is true then the remainder of the expression is evaluated.  Positive assertions use **?=** and negative assertions use **?!** to indicate the condition.
+
+Four Types of Lookaround
+
+Type                | Expression | Example (muli-line scenarios)
+--------------------|------------|------------------------------------------------------------------------------------------
+Positive Lookahead  | (?=...)    | ^(?=.\*begin\b).\*$ - matches any line having word begin, but won't match begginning
+Negative Lookahead  | (?!...)    | ^(?!.\*begin\b).\*$ - matches any line NOT having word begin, it will match begginning
+Positive Lookbehind | (?\<=...)    | tbd
+Negative Lookbehind | (?\<!...)    | tbd
+
+## Lookahead
+
+Useful for testing when a word is NOT included in a line
+
+### Example using grep and find
+
+```bash
+# find the name of all \*.c files in the current directory and its subdirectories, 
+# but exclude those in the /book subfolder
+find . -name *.c | grep -P '^(?!.*\/book).*$'
+```
+Note that the **-P** (Perl Style) was needed to evaluate this correctly with grep
+
+## Lookbehind
+
+tbd
