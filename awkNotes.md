@@ -14,6 +14,9 @@ Notes on awk utility and scripting
 * [sedNotes](https://github.com/GitLeeRepo/SedAwkAndGrepNotes/blob/master/sedNotes.md#overview)
 * [grepNotes](https://github.com/GitLeeRepo/SedAwkAndGrepNotes/blob/master/grepNotes.md#overview)
 
+# Differences Betweeen sed, awk, and grep Regular Expressions
+
+Refer to the separate document [DifferencesSedAwkGrep](https://github.com/GitLeeRepo/SedAwkAndGrepNotes/blob/master/DifferencesSedAwkGrep.md#overview)
 
 # Examples
 
