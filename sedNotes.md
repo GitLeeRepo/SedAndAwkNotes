@@ -45,6 +45,24 @@ sed -i 'instruction' fileToUpdate
 sed -f  scriptname file
 ```
 
+# Types of sed Operations
+
+## Substitution
+
+Replaces the text that matches the search pattern
+
+```bash
+sed 's/search/replace/'
+```
+
+## Deletion
+
+Deletes the lines that match the search pattern.
+
+```bash
+sed '/search/d'
+```
+
 # Simple Examples
 
 ## Single Instruction
@@ -76,14 +94,22 @@ s/here/there/' test.txt
 ```
 As long as the closing single quote was provided, the command will execute after pressing enter at the end of 'test.txt' (even though the terminiting quote is just before it, but because it is on the same line.
 
-# Examples
+# Other Examples
 
 ## Remove all text before and including a word
 
 This example takes the filetypes.raw text file wich has the filetype definitions recognized by vi, removing all extraneous data before and after the filetype name.  The file type name is identified as the word that immediately follows the word 'setf'.  The text following the file text name is removed in the first substitute, with the second substitute removing the text in front of the filetype name, including the word 'setf' that was used to identify its location.  In addition sit uses sort to ort the output and remove duplicates, and then finally stores it in the filetypes.txt file.
 
 ```bash
-sed -E -e 's/setf.([a-z]\w+).*/setf \1/' -e 's/^.*setf//' filetypes.raw | sort -u > filetypes.txt
+sed -E -e 's/setf.([a-z]\w+).\*/setf \1/' -e 's/^.\*setf//' filetypes.raw | sort -u > filetypes.txt
 ```
 Note that the order of the substitutes matter in this example
+
+## Deleting Lines that Contain a Word
+
+The following uses **find** to list all *.c files in the current directory and its subdirectories, along with **sed** that removes those lines that contain **/book**, i.e., those *.c files that are in a subdirectory named **book**.
+
+```bash
+find . -name \*.c | sed '/\\/book/d'
+```
 
