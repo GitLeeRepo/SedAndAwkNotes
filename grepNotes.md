@@ -97,7 +97,3 @@ find . -name *.c | sed '/\/book/d'
 
 tbd
 
-# Differences Betweeen sed, awk, and grep Regular Expressions
-
-Refer to the separate document [DifferencesSedAwkGrep](https://github.com/GitLeeRepo/SedAwkAndGrepNotes/blob/master/DifferencesSedAwkGrep.md#overview)
-
