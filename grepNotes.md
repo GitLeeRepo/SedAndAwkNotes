@@ -24,6 +24,10 @@ Notes on the grep utility
 * **-e** - allows **multiple search critia**, with each search string proceeded by an **-e**
 * **-c** - display the **count** of matching **lines** in place of normal text output
 
+# Differences Betweeen sed, awk, and grep Regular Expressions
+
+Refer to the separate document [DifferencesSedAwkGrep](https://github.com/GitLeeRepo/SedAwkAndGrepNotes/blob/master/DifferencesSedAwkGrep.md#overview)
+
 # Examples
 
 ## Basic
