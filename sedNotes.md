@@ -110,6 +110,6 @@ Note that the order of the substitutes matter in this example
 The following uses **find** to list all *.c files in the current directory and its subdirectories, along with **sed** that removes those lines that contain **/book**, i.e., those *.c files that are in a subdirectory named **book**.
 
 ```bash
-find . -name \*.c | sed '/\\/book/d'
+find . -name *.c | sed '/\/book/d'
 ```
 
