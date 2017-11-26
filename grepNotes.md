@@ -67,8 +67,8 @@ Type                | Expression | Example (muli-line scenarios)
 --------------------|------------|------------------------------------------------------------------------------------------
 Positive Lookahead  | (?=...)    | ^(?=.\*begin\b).\*$ - matches any line having word begin, but won't match begginning
 Negative Lookahead  | (?!...)    | ^(?!.\*begin\b).\*$ - matches any line NOT having word begin, it will match begginning
-Positive Lookbehind | (?\<=...)    | tbd
-Negative Lookbehind | (?\<!...)    | tbd
+Positive Lookbehind | (?\<=...)  | tbd
+Negative Lookbehind | (?\<!...)  | tbd
 
 ## Lookahead
 
@@ -82,6 +82,12 @@ Useful for testing when a word is NOT included in a line
 find . -name *.c | grep -P '^(?!.*\/book).*$'
 ```
 Note that the **-P** (Perl Style) was needed to evaluate this correctly with grep
+
+Note: another way to accomplish this that doesn't use a lookahead that is perhaps easier to understand, is to use **sed** instead of **grep** to delete those lines that contain '\book':
+
+```bash
+find . -name *.c | sed '/\/book/d'
+```
 
 ## Lookbehind
 
