@@ -38,6 +38,7 @@ To update the original file in place:
 
 ```bash
 sed -i 'instruction' fileToUpdate
+```
 
 ## Using a Script file
 
@@ -62,6 +63,39 @@ Deletes the lines that match the search pattern.
 ```bash
 sed '/search/d'
 ```
+
+## Extracting a portion of a file
+
+### Extract from start of file until match found
+
+```bash
+sed '/<pattern>/q' <file>
+```
+Extracts from the beginning of the file until pattern.  If pattern is never found the whole file is displayed
+
+This is accomplished by using the **q** (**quit**) command.  Sed display output from the beginning of the file until the pattern is reached, and then it quits, in effect giving the desired result.
+
+### Extract from pattern match until the end of the file
+
+```bash
+sed -n '/<pattern>/,$ p' <file>
+```
+Extracts from the the pattern line until end of the file.  If the pattern is not found nothing is returned.
+
+This command uses the **p** (**print pattern space**) command to print the contents of the **pattern space** which contains the matching lines between the pattern and the end of the file.  In order for this to work correctly sed's normal output must be suppressed with the **-n** flag.  Also, note the (**$**) to indicate the end of the file (in sed it is end of file, while most other regex utilities such as awk and grep it means end of line)
+
+Note: if you don't want to include the matching line that pattern is on, but everything else until the end of the file, use a capital **P** instead of the lowercase **p**.
+
+### Extract from first pattern until the second pattern
+
+```bash
+sed -n '/<pattern1>/,/<pattern2>/ p' <file>
+```
+Extracts every line in the file between the first pattern and the second pattern, including each patterns line
+
+This command uses the **p** (**print pattern space**) command to print the contents of the **pattern space** which contains the matching lines between the first and second pattern.  In order for this to work correctly sed's normal output must be suppressed with the **-n** flag.
+
+Note: if you don't want to include the matching line that pattern1 and pattern2 on, but everything else in between, use a capital **P** instead of the lowercase **p**.
 
 # Differences Betweeen sed, awk, and grep Regular Expressions
 
