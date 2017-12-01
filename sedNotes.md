@@ -46,7 +46,24 @@ sed -i 'instruction' fileToUpdate
 sed -f  scriptname file
 ```
 
-# Types of sed Operations
+# sed Commands
+
+These commands are detailed in the comming sectins:
+
+* **s** (**substitution**)
+* **d** (**delete**)
+* **a** (**append**)
+* **i** (**insert**)
+* **c** (**change**)
+* **l** (**list**)
+* **y** (**transform**)
+* **p** (**print**)
+* **=** (**print line number**)
+* **n** (**next**)
+* **d** (**delete**)
+* **r** (**read file**)
+* **w** (**write file**)
+* **q** (**quit**)
 
 ## Substitution
 
