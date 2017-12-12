@@ -50,7 +50,9 @@ grep -rl "regex" \</path\>
 Display the matching text, include the line number where the match was found
 
 ```bash
-grep -rn "regex" \</path\>
+grep -rn "regex" \</path\> # only follows symbolic links if provided on command line
+
+grep -Rn "regex" \</path\> # follows symbolic links
 ```
 
 ## Match the Text and Pipe to Filter for Specific Filename Pattern
