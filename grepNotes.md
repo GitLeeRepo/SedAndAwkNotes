@@ -32,10 +32,10 @@ Refer to the separate document [DifferencesSedAwkGrep](https://github.com/GitLee
 
 ## Basic
 
-List the lines that match the search in the current directory
+List the lines that match the search for all the files in the current directory
 
 ```bash
-grep "regex"
+grep "regex" *
 ```
 
 ## Matching Filenames with Directory Recursion
