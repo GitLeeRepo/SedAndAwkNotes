@@ -48,7 +48,7 @@ sed -f  scriptname file
 
 # sed Commands
 
-These commands are detailed in the comming sectins:
+These commands are detailed in the coming sections:
 
 * **s** (**substitution**)
 * **d** (**delete**)
@@ -97,7 +97,7 @@ This is accomplished by using the **q** (**quit**) command.  Sed display output 
 ```bash
 sed -n '/<pattern>/,$ p' <file>
 ```
-Extracts from the the pattern line until end of the file.  If the pattern is not found nothing is returned.
+Extracts from the pattern line until end of the file.  If the pattern is not found nothing is returned.
 
 This command uses the **p** (**print pattern space**) command to print the contents of the **pattern space** which contains the matching lines between the pattern and the end of the file.  In order for this to work correctly sed's normal output must be suppressed with the **-n** flag.  Also, note the (**$**) to indicate the end of the file (in sed it is end of file, while most other regex utilities such as awk and grep it means end of line)
 
@@ -114,7 +114,7 @@ This command uses the **p** (**print pattern space**) command to print the conte
 
 Note: if you don't want to include the matching line that pattern1 and pattern2 on, but everything else in between, use a capital **P** instead of the lowercase **p**.
 
-# Differences Betweeen sed, awk, and grep Regular Expressions
+# Differences Between sed, awk, and grep Regular Expressions
 
 Refer to the separate document [DifferencesSedAwkGrep](https://github.com/GitLeeRepo/SedAwkAndGrepNotes/blob/master/DifferencesSedAwkGrep.md#overview)
 

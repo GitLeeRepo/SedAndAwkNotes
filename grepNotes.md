@@ -24,7 +24,7 @@ Notes on the grep utility
 * **-e** - allows **multiple search critia**, with each search string proceeded by an **-e**
 * **-c** - display the **count** of matching **lines** in place of normal text output
 
-# Differences Betweeen sed, awk, and grep Regular Expressions
+# Differences Between sed, awk, and grep Regular Expressions
 
 Refer to the separate document [DifferencesSedAwkGrep](https://github.com/GitLeeRepo/SedAwkAndGrepNotes/blob/master/DifferencesSedAwkGrep.md#overview)
 
@@ -71,8 +71,8 @@ Four Types of Lookaround
 
 Type                | Expression | Example (muli-line scenarios)
 --------------------|------------|------------------------------------------------------------------------------------------
-Positive Lookahead  | (?=...)    | ^(?=.\*begin\b).\*$ - matches any line having word begin, but won't match begginning
-Negative Lookahead  | (?!...)    | ^(?!.\*begin\b).\*$ - matches any line NOT having word begin, it will match begginning
+Positive Lookahead  | (?=...)    | ^(?=.\*begin\b).\*$ - matches any line having word begin, but won't match beginning
+Negative Lookahead  | (?!...)    | ^(?!.\*begin\b).\*$ - matches any line NOT having word begin, it will match beginning
 Positive Lookbehind | (?\<=...)  | tbd
 Negative Lookbehind | (?\<!...)  | tbd
 

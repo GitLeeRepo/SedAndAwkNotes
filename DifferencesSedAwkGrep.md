@@ -1,6 +1,6 @@
 # Overview
 
-Notes on where sed, awk, and grep differ, paticularly in their use of regular expressions.
+Notes on where sed, awk, and grep differ, particularly in their use of regular expressions.
 
 # References
 
