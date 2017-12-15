@@ -122,7 +122,7 @@ Refer to the separate document [DifferencesSedAwkGrep](https://github.com/GitLee
 
 ## Single Instruction
 
-**To Replace every occurance of 'this' with 'that' in test.txt**
+**To Replace every occurrence of 'this' with 'that' in test.txt**
 ```bash
 sed 's/this/that/' test.txt
 ```
@@ -147,13 +147,13 @@ sed '
 s/this/that/
 s/here/there/' test.txt
 ```
-As long as the closing single quote was provided, the command will execute after pressing enter at the end of 'test.txt' (even though the terminiting quote is just before it, but because it is on the same line.
+As long as the closing single quote was provided, the command will execute after pressing enter at the end of 'test.txt' (even though the terminating quote is just before it, but because it is on the same line.
 
 # Other Examples
 
 ## Remove all text before and including a word
 
-This example takes the filetypes.raw text file wich has the filetype definitions recognized by vi, removing all extraneous data before and after the filetype name.  The file type name is identified as the word that immediately follows the word 'setf'.  The text following the file text name is removed in the first substitute, with the second substitute removing the text in front of the filetype name, including the word 'setf' that was used to identify its location.  In addition sit uses sort to ort the output and remove duplicates, and then finally stores it in the filetypes.txt file.
+This example takes the file types.raw text file which has the file type definitions recognized by vi, removing all extraneous data before and after the file type name.  The file type name is identified as the word that immediately follows the word 'setf'.  The text following the file text name is removed in the first substitute, with the second substitute removing the text in front of the file type name, including the word 'setf' that was used to identify its location.  In addition it uses sort to sort the output and remove duplicates, and then finally stores it in the file types.txt file.
 
 ```bash
 sed -E -e 's/setf.([a-z]\w+).\*/setf \1/' -e 's/^.\*setf//' filetypes.raw | sort -u > filetypes.txt

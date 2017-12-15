@@ -21,7 +21,7 @@ Notes on the grep utility
 * **-f** - use the search patterns found in **-f \<filename\>**
 * **-i** - **case insensitive** search
 * **-v** - invert match, i.e., show **non-matched lines/files**
-* **-e** - allows **multiple search critia**, with each search string proceeded by an **-e**
+* **-e** - allows **multiple search critical**, with each search string proceeded by an **-e**
 * **-c** - display the **count** of matching **lines** in place of normal text output
 
 # Differences Between sed, awk, and grep Regular Expressions
