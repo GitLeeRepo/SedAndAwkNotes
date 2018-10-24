@@ -55,6 +55,14 @@ grep -rn "regex" \</path\> # only follows symbolic links if provided on command 
 grep -Rn "regex" \</path\> # follows symbolic links
 ```
 
+## Match Text Content Displaying Filename and Count for Non-Zero Counts
+
+This example searches **all files and subdirectories** of **.md** files for the **word 'curl'** displaying the **filename** and the **word count** only.  It uses the **-v (invert)** flag to **exclude** all lines that end with **:0**, which are **zero matches**.
+
+```bash
+grep -rnic "curl" --include=*.md | grep -v :0 | sort
+```
+
 ## Match the Text and Pipe to Filter for Specific Filename Pattern
 
 Search for header files containing 'boot_params' in the current directory and all subdirectories, displaying the file names only, and not the matched text.
