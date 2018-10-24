@@ -57,10 +57,10 @@ grep -Rn "regex" \</path\> # follows symbolic links
 
 ## Match Text Content Displaying Filename and Count for Non-Zero Counts
 
-This example searches **all files and subdirectories** of **.md** files for the **word 'curl'** displaying the **filename** and the **word count** only.  It uses the **-v (invert)** flag to **exclude** all lines that end with **:0**, which are **zero matches**.
+This example searches **all files and subdirectories** of **.md** files for the **word 'curl'** displaying the **filename** and the **word count** only.  It uses the **-v (invert)** flag to **exclude** all lines that end with **:0**, which are **zero matches**. The **ric** flags are for **recursive**, **case insensitive**, and diplay **filename** and **count** only.
 
 ```bash
-grep -rnic "curl" --include=*.md | grep -v :0 | sort
+grep -ric "curl" --include=*.md | grep -v :0 | sort
 ```
 
 ## Match the Text and Pipe to Filter for Specific Filename Pattern
