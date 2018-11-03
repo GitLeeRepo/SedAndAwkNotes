@@ -10,9 +10,15 @@ Notes on sed utility and scripting
 
 ## My Other Notes
 
-* [RegExNotes](https://github.com/GitLeeRepo/RegExNotes/blob/master/RegExNotes.md#overview)
+### Notes in this repository
+
+* [SedAwkGrepAndFindNotes](https://github.com/GitLeeRepo/SedAwkAndGrepNotes/blob/master/SedAwkGrepAndFindNotes.md#overview*
 * [grepNotes](https://github.com/GitLeeRepo/SedAwkAndGrepNotes/blob/master/grepNotes.md#overview)
 * [awkNotes](https://github.com/GitLeeRepo/SedAwkAndNotes/blob/master/awkNotes.md#overview)
+
+### Notes in other repositories
+
+* [RegExNotes](https://github.com/GitLeeRepo/RegExNotes/blob/master/RegExNotes.md#overview)
 
 # sed Syntax
 
