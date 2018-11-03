@@ -14,6 +14,7 @@ tbd
 
 ### Notes in this repository
 
+* [SedAwkGrepAndFindNotes](https://github.com/GitLeeRepo/SedAwkAndGrepNotes/blob/master/SedAwkGrepAndFindNotes.md#overview)
 * [awkNotes](https://github.com/GitLeeRepo/SedAwkAndNotes/blob/master/awkNotes.md#overview)
 * [sedNotes](https://github.com/GitLeeRepo/SedAwkAndGrepNotes/blob/master/sedNotes.md#overview)
 * [grepNotes](https://github.com/GitLeeRepo/SedAwkAndGrepNotes/blob/master/grepNotes.md#overview)
@@ -22,10 +23,6 @@ tbd
 
 * [RegExNotes](https://github.com/GitLeeRepo/RegExNotes/blob/master/RegExNotes.md#overview)
 * [NotesGuidlines](https://github.com/GitLeeRepo/NotesGuidlines/blob/master/NotesGuidlines.md#overview)
-
-# Contents
-
-tbd
 
 # Concepts and Terminology
 
