@@ -10,9 +10,17 @@ Notes on awk utility and scripting
 
 ## My Other Notes
 
-* [RegExNotes](https://github.com/GitLeeRepo/RegExNotes/blob/master/RegExNotes.md#overview)
+### Notes in this repository
+
+* [SedAwkGrepAndFindNotes](https://github.com/GitLeeRepo/SedAwkAndGrepNotes/blob/master/SedAwkGrepAndFindNotes.md#overview)
 * [sedNotes](https://github.com/GitLeeRepo/SedAwkAndGrepNotes/blob/master/sedNotes.md#overview)
-* [grepNotes](https://github.com/GitLeeRepo/SedAwkAndGrepNotes/blob/master/grepNotes.md#overview)
+* [findNotes](https://github.com/GitLeeRepo/SedAwkAndGrepNotes/blob/master/findNotes.md#overview)
+
+### Notes in other repositories
+
+* [RegExNotes](https://github.com/GitLeeRepo/RegExNotes/blob/master/RegExNotes.md#overview)
+
+# Command Line Options
 
 # Differences Between sed, awk, and grep Regular Expressions
 
