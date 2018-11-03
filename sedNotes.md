@@ -12,7 +12,7 @@ Notes on sed utility and scripting
 
 ### Notes in this repository
 
-* [SedAwkGrepAndFindNotes](https://github.com/GitLeeRepo/SedAwkAndGrepNotes/blob/master/SedAwkGrepAndFindNotes.md#overview*
+* [SedAwkGrepAndFindNotes](https://github.com/GitLeeRepo/SedAwkAndGrepNotes/blob/master/SedAwkGrepAndFindNotes.md#overview)
 * [grepNotes](https://github.com/GitLeeRepo/SedAwkAndGrepNotes/blob/master/grepNotes.md#overview)
 * [awkNotes](https://github.com/GitLeeRepo/SedAwkAndNotes/blob/master/awkNotes.md#overview)
 
