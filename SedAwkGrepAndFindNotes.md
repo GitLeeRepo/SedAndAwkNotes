@@ -26,7 +26,7 @@ tbd
 * [UbuntuNotes](https://github.com/GitLeeRepo/UbuntuNotes/blob/master/UbuntuNotes.md#overview)
 * [DebianNotes](https://github.com/GitLeeRepo/DebianNotes/blob/master/DebianNotes.md#overview)
 * [CentOsNotes](https://github.com/GitLeeRepo/CentOsNotes/blob/master/CentOsNotes.md#overview)
-* [NotesGuidlines](https://github.com/GitLeeRepo/NotesGuidlines/blob/master/NotesGuidlines.md#overview)
+* [NotesGuidleines](https://github.com/GitLeeRepo/NotesGuidlines/blob/master/NotesGuidlines.md#overview)
 
 # Contents
 
