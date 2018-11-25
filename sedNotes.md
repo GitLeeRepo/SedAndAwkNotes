@@ -77,15 +77,17 @@ These commands are detailed in the coming sections:
 Replaces the text that matches the search pattern
 
 ```bash
-sed 's/search/replace/'
+sed -i 's/search/replace/' <file>
 ```
+
+The **-i** parameter **updates** the **file inplace**, otherwise the change is output to **stdout**.  Note: **do not** try to **redirect** the **stdout** back to the **original file** since it will result in an **empty file**, use the **-i instead**.
 
 ## Deletion
 
 Deletes the lines that match the search pattern.
 
 ```bash
-sed '/search/d'
+sed '/search/d' <file>
 ```
 
 ## Extracting a portion of a file
